@@ -3,7 +3,7 @@ import styled, { ThemeProvider, injectGlobal } from "styled-components";
 
 import Header from '../components/Header';
 import Meta from '../components/Meta';
-import { inject } from 'async';
+// import { inject } from 'async';
 
 const theme = {
   maxWidth: "1000px",
