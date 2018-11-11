@@ -176,7 +176,7 @@ function (_Document) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
-        href: "https://fonts.googleapis.com/css?family=Open+Sans",
+        href: "https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One",
         rel: "stylesheet",
         __source: {
           fileName: _jsxFileName,
@@ -209,7 +209,20 @@ function (_Document) {
           lineNumber: 23
         },
         __self: this
-      })));
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
+        src: "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
+      }, "M.AutoInit();")));
     }
   }], [{
     key: "getInitialProps",

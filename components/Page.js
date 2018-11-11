@@ -3,6 +3,7 @@ import styled, { ThemeProvider, injectGlobal } from "styled-components";
 
 import Header from '../components/Header';
 import Meta from '../components/Meta';
+import Footer from '../components/Footer';
 // import { inject } from 'async';
 
 const theme = {
@@ -44,6 +45,13 @@ injectGlobal`
     text-decoration: none;
     color: ${theme.darkBlue};
   }
+  .material-tooltip {
+    background-color: white;
+    color: black;
+    border: 1px ${theme.darkTeal} solid;
+    font-size: 1em;
+    border-radius: 10px;
+  }
 `;
 
 export default class Page extends Component {
@@ -56,6 +64,7 @@ export default class Page extends Component {
           <Inner>
             {this.props.children}
           </Inner>
+          <Footer />
         </StyledPage>
       </ThemeProvider>
     )

@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import Archive from './Archive';
+import Skills from './Skills';
+import About from './About';
 
 const Space = styled.div`
-  background: linear-gradient(#0f2027, #203a43);
+  background: white;
   height: 550px;
   padding-top: 100px;
 `;
@@ -35,15 +37,39 @@ const MainOrbit = styled.div`
 `;
 
 const Sun = styled.div`
-  background-image: radial-gradient(yellow, orange, red);
+  background: white;
+  border: 2px teal solid;
   border-radius: 50%;
   grid-area: sun;
   height: 5em;
   width: 5em;
+  text-align: center;
+  font-family: "Poiret One", sans-serif;
+  h4 {
+    margin-top: 35%;
+    @keyframes counter-rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(-179deg);
+      }
+      100% {
+        transform: rotate(-359deg);
+      }
+    }
+    animation-name: counter-rotate;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+  }
 `;
 
 const NorthPlanet = styled.div`
-  background-color: white;
+  text-align: center;
+  i {
+    margin-top: 35%;
+  }
+  border: 1px teal solid;
   border-radius: 50%;
   grid-area: north-planet;
   height: 3em;
@@ -51,10 +77,28 @@ const NorthPlanet = styled.div`
   position: relative;
   bottom: 45px;
   cursor: pointer;
+  @keyframes counter-rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-179deg);
+    }
+    100% {
+      transform: rotate(-359deg);
+    }
+  }
+  animation-name: counter-rotate;
+  animation-duration: 120s;
+  animation-iteration-count: infinite;
 `;
 
 const EastPlanet = styled.div`
-  background: white;
+  text-align: center;
+  i {
+    margin-top: 35%;
+  }
+  border: 1px teal solid;
   border-radius: 50%;
   grid-area: east-planet;
   height: 3em;
@@ -62,21 +106,57 @@ const EastPlanet = styled.div`
   position: relative;
   left: 45px;
   cursor: pointer;
+  @keyframes counter-rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-179deg);
+    }
+    100% {
+      transform: rotate(-359deg);
+    }
+  }
+  animation-name: counter-rotate;
+  animation-duration: 120s;
+  animation-iteration-count: infinite;
 `;
 
 const SouthPlanet = styled.div`
-  background: white;
+  text-align: center;
+  i {
+    margin-top: 35%;
+  }
+  border: 1px teal solid;
   border-radius: 50%;
   grid-area: south-planet;
   height: 3em;
   width: 3em;
-  position: relative; 
+  position: relative;
   top: 45px;
   cursor: pointer;
+  @keyframes counter-rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-179deg);
+    }
+    100% {
+      transform: rotate(-359deg);
+    }
+  }
+  animation-name: counter-rotate;
+  animation-duration: 120s;
+  animation-iteration-count: infinite;
 `;
 
 const WestPlanet = styled.div`
-  background: white;
+  text-align: center;
+  i {
+    margin-top: 35%;
+  }
+  border: 1px teal solid;
   border-radius: 50%;
   grid-area: west-planet;
   height: 3em;
@@ -84,28 +164,40 @@ const WestPlanet = styled.div`
   position: relative;
   right: 45px;
   cursor: pointer;
-`;
-
-const Icon = styled.i`
-  color: ${props => props.theme.darkBlue};
-  padding: 15px;
   @keyframes counter-rotate {
-    0% {transform: rotate(0deg)}
-    50% {transform: rotate(-179deg)}
-    100% {transform: rotate(-359deg)}
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-179deg);
+    }
+    100% {
+      transform: rotate(-359deg);
+    }
   }
   animation-name: counter-rotate;
   animation-duration: 120s;
   animation-iteration-count: infinite;
 `;
 
+// const Icon = styled.i`
+//   @keyframes counter-rotate {
+//     0% {transform: rotate(0deg)}
+//     50% {transform: rotate(-179deg)}
+//     100% {transform: rotate(-359deg)}
+//   }
+//   animation-name: counter-rotate;
+//   animation-duration: 120s;
+//   animation-iteration-count: infinite;
+// `;
+
 const Content = styled.div`
-  background: white;
+  background: linear-gradient(${props => props.theme.teal}, ${props => props.theme.darkTeal});
 `;
 
 export default class Orbitals extends React.Component{
   state = {
-    mount: 'archive',
+    mount: 'about',
   };
 
   handleIconClick = val => {
@@ -116,34 +208,50 @@ export default class Orbitals extends React.Component{
     let component = <div></div>
     if (this.state.mount === "archive") {
       component = <Archive />
+    } else if (this.state.mount === "skills") {
+      component = <Skills />
+    } else if (this.state.mount === "about") {
+      component = <About />
     }
-    return (
-    <div>
-      <Space>
-        <MainOrbit>
-          <Sun />
-          <NorthPlanet>
-            <Icon className="fas fa-archive" onClick={() => {
+    return <div>
+        <Space>
+          <MainOrbit>
+
+            <Sun>
+              <h4>JDR</h4>
+            </Sun>
+
+            <NorthPlanet className="tooltipped" data-position="top" data-tooltip="About Me" onClick={() => {
+                this.handleIconClick("about");
+              }}>
+              <i class="fas fa-question-circle"></i>
+            </NorthPlanet>
+
+            <EastPlanet className="tooltipped" data-position="top" data-tooltip="Projects" onClick={() => {
                 this.handleIconClick("archive");
-              }} />
-          </NorthPlanet>
-          <EastPlanet>
-            <Icon className="fas fa-question-circle" onClick={() => {
-              this.handleIconClick("about");
-            }}/>
-          </EastPlanet>
-          <SouthPlanet>
-            <Icon className="fas fa-drafting-compass" onClick={() => {
-              this.handleIconClick("about");
-            }}></Icon>
-          </SouthPlanet>
-          <WestPlanet />
-        </MainOrbit>
-      </Space>
-      <Content>
-        {component}
-      </Content>
-    </div>
-    );
+              }}>
+              <i class="fas fa-project-diagram" />
+            </EastPlanet>
+
+            <SouthPlanet className="tooltipped" data-position="top" data-tooltip="Skills" onClick={() => {
+                this.handleIconClick("skills");
+              }}>
+              <i class="fas fa-drafting-compass" />
+            </SouthPlanet>
+
+            <WestPlanet className="tooltipped" data-position="top" data-tooltip="Contact" onClick={() => {
+                this.handleIconClick("contact");
+            }}>
+              <i className="far fa-envelope"></i>  
+            </WestPlanet>
+            
+          </MainOrbit>
+        </Space>
+        <Content>
+          <div className="outer">
+            <div className="inner">{component}</div>
+          </div>
+        </Content>
+      </div>;
   }
 }

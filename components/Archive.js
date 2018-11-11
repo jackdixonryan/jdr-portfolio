@@ -4,17 +4,18 @@ import Project from './Project';
 
 const Projects = styled.div`
   width: 80%;
-  max-width: 1000px;
+  max-width: 750px;
   margin: 0 auto;
   background: white;
-  border: 2px whitesmoke solid;
+  border: 2px teal solid;
   padding: 20px;
   position: relative;
   top: -60px;
   border-radius: 25px;
 `;
 
-const Header = styled.h1`
+const Header = styled.h3`
+  font-family: 'Poiret One', sans-serif;
   text-align: center;
   color: #0f2027;
   text-transform: uppercase;

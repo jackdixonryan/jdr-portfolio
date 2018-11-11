@@ -7,12 +7,12 @@ const Card = styled.div`
 
 export default function Project(props) {
   return (
-    <Card className="card col s12 m6 l4">
+    <Card className="card col s12 m6 l6">
       <div className="card-image">
         {props.image && <img src={props.image} alt={props.name} />}
       </div>
       <div className="card-content">
-        <h3>{props.name}</h3>
+        <h4>{props.name}</h4>
         <p>{props.content}</p>
       </div>
       <div className="card-action">

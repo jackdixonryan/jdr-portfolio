@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 const NavStyle = styled.ul`
   margin: 0;
+  font-size: 1.5em;
   display: flex;
-  background: ${props => props.theme.darkBlue};
+  background: white;
   text-align: center;
+  border: 1px solid ${props => props.theme.teal};
   a {
     flex: 1;
-    font-size: 2rem;
-    color: white;
+    color: ${props => props.theme.darkBlue};
   }
 `;
 
