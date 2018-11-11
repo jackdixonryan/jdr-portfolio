@@ -70,29 +70,29 @@ const Skillsheet = styled.div`
 
 
 export default function Skills() {
-  return <Main>
+  return <Main className="animated flipInX">
       <h3>Skills</h3>
       <Skillsheet>
         <div>
           <h4 className="frontend">Frontend</h4>
           <div className="skills left">
-            <div className="skill">
+            <div className="skill animated fadeInLeft delay-3s">
               <i className="fab fa-react" />
               <span>React</span>
             </div>
-            <div className="skill">
+            <div className="skill animated fadeInLeft delay-2s">
               <i className="fab fa-vuejs" />
               <span>Vue</span>
             </div>
-            <div className="skill">
+            <div className="skill animated fadeInLeft delay-1s">
               <i className="fab fa-js" />
               <span>ECMAScript 6</span>
             </div>
-            <div className="skill">
+            <div className="skill animated fadeInLeft delay-2s">
               <i className="fab fa-css3-alt" />
               <span>CSS</span>
             </div>
-            <div className="skill">
+            <div className="skill animated fadeInLeft delay-3s">
               <i className="fab fa-html5" />
               <span>HTML</span>
             </div>
@@ -101,23 +101,23 @@ export default function Skills() {
         <div>
           <h4 className="backend">Backend</h4>
           <div className="skills right">
-            <div className="skill">
+            <div className="skill animated fadeInRight delay-3s">
               <span>Node Js</span>
               <i className="fab fa-node-js" />
             </div>
-            <div className="skill">
+            <div className="skill animated fadeInRight delay-2s">
               <span>mySQL & MongoDB</span>
               <i class="fas fa-database" />
             </div>
-            <div className="skill">
+            <div className="skill animated fadeInRight delay-1s">
               <span>NPM</span>
               <i className="fab fa-npm" />
             </div>
-            <div className="skill">
+            <div className="skill animated fadeInRight delay-2s">
               <span>PHP</span>
               <i className="fab fa-php"></i>
             </div>
-            <div className="skill">
+            <div className="skill animated fadeInRight delay-3s">
               <span>Google APIs & Firebase</span>
               <i className="fab fa-google" />
             </div>

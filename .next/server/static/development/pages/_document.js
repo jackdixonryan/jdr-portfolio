@@ -191,35 +191,43 @@ function (_Document) {
           lineNumber: 19
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("body", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+        rel: "stylesheet",
+        href: "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 20
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("body", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 22
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 23
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-        src: "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js",
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 24
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
+        src: "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 25
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
         },
         __self: this
       }, "M.AutoInit();")));

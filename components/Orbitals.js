@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Archive from './Archive';
 import Skills from './Skills';
 import About from './About';
+import Contact from './Contact';
 
 const Space = styled.div`
   background: white;
@@ -212,9 +213,11 @@ export default class Orbitals extends React.Component{
       component = <Skills />
     } else if (this.state.mount === "about") {
       component = <About />
+    } else {
+      component = <Contact />
     }
     return <div>
-        <Space>
+      <Space className="animated bounceInDown">
           <MainOrbit>
 
             <Sun>
@@ -247,7 +250,7 @@ export default class Orbitals extends React.Component{
             
           </MainOrbit>
         </Space>
-        <Content>
+        <Content className="animated bounceInUp">
           <div className="outer">
             <div className="inner">{component}</div>
           </div>

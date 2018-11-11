@@ -22,7 +22,7 @@ const Header = styled.h3`
 `;
 
 export default function Archive() {
-  return <Projects>
+  return <Projects className="animated flipInX"> 
       <Header>Projects</Header>
       <div className = "row">
         <Project name="Climascience" image="../static/images/climascience.gif" content="Built on Vue.js with Nuxt powering the backend, Climascience provides dynamic and interactive climate data for any locale."/>

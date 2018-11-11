@@ -29,7 +29,7 @@ export default function Footer() {
       </div>
       <div className="credits">
         <i className="fab fa-react" />
-        <span>Powered By React & NextJS</span>
+        <span>Powered By ReactJS & Next</span>
       </div>
     </Foot>;
 }

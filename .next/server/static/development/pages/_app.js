@@ -162,7 +162,7 @@ function Footer() {
       lineNumber: 32
     },
     __self: this
-  }, "Powered By React & NextJS")));
+  }, "Powered By ReactJS & Next")));
 }
 
 /***/ }),

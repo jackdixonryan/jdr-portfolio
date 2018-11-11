@@ -19,41 +19,50 @@ var _jsxFileName = "/Users/johnryan/Dropbox/code/Interrim/portfolio/components/A
 var Main = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "About__Main",
   componentId: "rvd7go-0"
-})(["width:80%;max-width:750px;margin:0 auto;background:white;border:2px teal solid;padding:20px;position:relative;top:-60px;border-radius:25px;h3{text-align:center;font-family:\"Poiret One\",sans-serif;}.loc{text-align:center;}p{text-align:justify;}"]);
+})(["width:80%;max-width:750px;margin:0 auto;background:white;border:2px teal solid;padding:20px;position:relative;top:-60px;border-radius:25px;h3{text-align:center;font-family:\"Poiret One\",sans-serif;margin-top:-20px;}.loc{text-align:center;}p{text-align:justify;}.picture{width:200px;height:200px;margin:0 auto;border-radius:50%;border:1px ", " solid;position:relative;bottom:50px;z-index:1000;background-image:url(\"../static/images/jack-ryan.png\");background-size:cover}"], function (props) {
+  return props.theme.darkTeal;
+});
 function About() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Main, {
+    className: "animated flipInX",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 41
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "eh.jpg",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "picture",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 42
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 43
     },
     __self: this
   }, "Jack D. Ryan"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "loc",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 44
     },
     __self: this
   }, "Full-stack web developer based in Niwot, CO"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 45
     },
     __self: this
-  }, "I have extensive experience programming in front-end frameworks like React and Vuejs, and I avidly pursue the cleanest, sharpest code from my front-end applications. I love working at the junction between front-end reactivity and back-end data structures to create web apps that react immediately to every change in the data. "));
+  }, "I have extensive experience programming in front-end frameworks like React and Vuejs, and I avidly pursue the cleanest, sharpest code from my front-end applications. I love working at the junction between front-end reactivity and back-end data structures to create web apps that react immediately to every change in the data. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  }, "In addition to web development, I am an active writer, an aspiring cyclist, and an intermediate (verging on disastrous) homebrewer."));
 }
 
 /***/ }),
@@ -86,6 +95,7 @@ var Header = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h3.withCo
 })(["font-family:'Poiret One',sans-serif;text-align:center;color:#0f2027;text-transform:uppercase;"]);
 function Archive() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Projects, {
+    className: "animated flipInX",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25
@@ -127,6 +137,110 @@ function Archive() {
 
 /***/ }),
 
+/***/ "./components/Contact.js":
+/*!*******************************!*\
+  !*** ./components/Contact.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Contact; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+var _jsxFileName = "/Users/johnryan/Dropbox/code/Interrim/portfolio/components/Contact.js";
+
+
+var Main = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "Contact__Main",
+  componentId: "hnie8z-0"
+})(["width:80%;max-width:750px;margin:0 auto;background:white;border:2px teal solid;padding:20px;position:relative;top:-60px;border-radius:25px;h3{font-family:\"Poiret One\",sans-serif;text-align:center;}#grid{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr;grid-template-areas:\"linkedin email github\";justify-items:center;align-items:center;.linkedin{grid-area:linkedin;color:teal;}.github{grid-area:github;color:teal;}.email{grid-area:email;}i{margin-right:6px;}a{font-size:1.2em;}}"]);
+function Contact() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Main, {
+    className: "animated flipInX",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }, "Get in Touch!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "grid",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "contact animated fadeInLeft delay-1s linkedin",
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fab fa-linkedin",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "hide-on-small-only",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    },
+    __self: this
+  }, "LinkedIn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#",
+    className: "contact animated fadeInLeft delay-2s email",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    },
+    __self: this
+  }, "jack.dixon.ryan@gmail.com")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#",
+    className: "contact animated fadeInLeft delay-3s github",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fab fa-github",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "hide-on-small-only",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: this
+  }, "Github"))));
+}
+
+/***/ }),
+
 /***/ "./components/Orbitals.js":
 /*!********************************!*\
   !*** ./components/Orbitals.js ***!
@@ -143,6 +257,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Archive__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Archive */ "./components/Archive.js");
 /* harmony import */ var _Skills__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Skills */ "./components/Skills.js");
 /* harmony import */ var _About__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./About */ "./components/About.js");
+/* harmony import */ var _Contact__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Contact */ "./components/Contact.js");
 var _jsxFileName = "/Users/johnryan/Dropbox/code/Interrim/portfolio/components/Orbitals.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -164,6 +279,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 
@@ -256,7 +372,7 @@ function (_React$Component) {
       var component = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 208
+          lineNumber: 209
         },
         __self: this
       });
@@ -265,7 +381,7 @@ function (_React$Component) {
         component = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Archive__WEBPACK_IMPORTED_MODULE_2__["default"], {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 210
+            lineNumber: 211
           },
           __self: this
         });
@@ -273,7 +389,7 @@ function (_React$Component) {
         component = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Skills__WEBPACK_IMPORTED_MODULE_3__["default"], {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 212
+            lineNumber: 213
           },
           __self: this
         });
@@ -281,7 +397,15 @@ function (_React$Component) {
         component = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_About__WEBPACK_IMPORTED_MODULE_4__["default"], {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 214
+            lineNumber: 215
+          },
+          __self: this
+        });
+      } else {
+        component = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Contact__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 217
           },
           __self: this
         });
@@ -290,31 +414,32 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 216
+          lineNumber: 219
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Space, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 217
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MainOrbit, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 218
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Sun, {
+        className: "animated bounceInDown",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 220
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MainOrbit, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 221
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Sun, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 223
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 224
         },
         __self: this
       }, "JDR")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NorthPlanet, {
@@ -326,14 +451,14 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 224
+          lineNumber: 227
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         class: "fas fa-question-circle",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 227
+          lineNumber: 230
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(EastPlanet, {
@@ -345,14 +470,14 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 230
+          lineNumber: 233
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         class: "fas fa-project-diagram",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 233
+          lineNumber: 236
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SouthPlanet, {
@@ -364,14 +489,14 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 236
+          lineNumber: 239
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         class: "fas fa-drafting-compass",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 239
+          lineNumber: 242
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WestPlanet, {
@@ -383,34 +508,35 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 242
+          lineNumber: 245
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "far fa-envelope",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 245
+          lineNumber: 248
         },
         __self: this
       })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, {
+        className: "animated bounceInUp",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 250
+          lineNumber: 253
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "outer",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 251
+          lineNumber: 254
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "inner",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 252
+          lineNumber: 255
         },
         __self: this
       }, component))));
@@ -556,6 +682,7 @@ var Skillsheet = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.w
 });
 function Skills() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Main, {
+    className: "animated flipInX",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 73
@@ -594,7 +721,7 @@ function Skills() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "skill",
+    className: "skill animated fadeInLeft delay-3s",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 79
@@ -614,7 +741,7 @@ function Skills() {
     },
     __self: this
   }, "React")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "skill",
+    className: "skill animated fadeInLeft delay-2s",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 83
@@ -634,7 +761,7 @@ function Skills() {
     },
     __self: this
   }, "Vue")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "skill",
+    className: "skill animated fadeInLeft delay-1s",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 87
@@ -654,7 +781,7 @@ function Skills() {
     },
     __self: this
   }, "ECMAScript 6")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "skill",
+    className: "skill animated fadeInLeft delay-2s",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 91
@@ -674,7 +801,7 @@ function Skills() {
     },
     __self: this
   }, "CSS")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "skill",
+    className: "skill animated fadeInLeft delay-3s",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 95
@@ -714,7 +841,7 @@ function Skills() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "skill",
+    className: "skill animated fadeInRight delay-3s",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 104
@@ -734,7 +861,7 @@ function Skills() {
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "skill",
+    className: "skill animated fadeInRight delay-2s",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 108
@@ -754,7 +881,7 @@ function Skills() {
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "skill",
+    className: "skill animated fadeInRight delay-1s",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 112
@@ -774,7 +901,7 @@ function Skills() {
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "skill",
+    className: "skill animated fadeInRight delay-2s",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 116
@@ -794,7 +921,7 @@ function Skills() {
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "skill",
+    className: "skill animated fadeInRight delay-3s",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 120
@@ -6295,7 +6422,7 @@ var Home = function Home(props) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -6320,5 +6447,5 @@ module.exports = dll_ecba6b44147cc8018369;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
+},[[3,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map
