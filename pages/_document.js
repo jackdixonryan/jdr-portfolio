@@ -18,6 +18,7 @@ export default class MyDocument extends Document {
           <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One" rel="stylesheet" />
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+          <meta property="og:image" content="../static/images/jack-ryan.png"></meta>
         </Head>
         <body>
           <Main />
