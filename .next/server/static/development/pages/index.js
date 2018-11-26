@@ -213,6 +213,8 @@ function Archive() {
     name: "Climascience",
     image: "../static/images/climascience.gif",
     content: "Built on Vue.js with Nuxt powering the backend, Climascience provides dynamic and interactive climate data for any locale.",
+    git: "https://github.com/adambeck7/ClimaScience",
+    link: "https://mysterious-escarpment-94857.herokuapp.com/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28
@@ -222,9 +224,22 @@ function Archive() {
     name: "Umsatz",
     image: "../static/images/umsatz.gif",
     content: "Umsatz is a serverless progressive web application for restaurants to seamlessly oversee and manage orders and reservations placed by their clientele online.",
+    git: "https://github.com/adambeck7/umsatz-fb",
+    link: "https://umsatz.co/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Project__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    name: "Bitminer",
+    image: "",
+    content: "Bitminer is still a work in progress. It's an idea to create a friendly front-end simple and educational game to demonstrate how blockchain technology works. Currently it is only files for building, mining, and distributing a simple JavaScript blockchain.",
+    git: "https://github.com/jackdixonryan/intro-blockchain",
+    link: "https://github.com/jackdixonryan/intro-blockchain",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
     },
     __self: this
   })));
@@ -258,78 +273,77 @@ function Contact() {
     className: "animated flipInX",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 46
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 47
     },
     __self: this
   }, "Get in Touch!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     id: "grid",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 48
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "contact animated fadeInLeft delay-1s linkedin",
-    href: "#",
+    href: "https://www.linkedin.com/in/john-dixon-ryan/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 49
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fab fa-linkedin",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 50
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "hide-on-small-only",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 51
     },
     __self: this
-  }, "LinkedIn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
+  }, "LinkedIn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "contact animated fadeInLeft delay-2s email",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 53
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 54
     },
     __self: this
   }, "jack.dixon.ryan@gmail.com")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
+    href: "https://github.com/jackdixonryan",
     className: "contact animated fadeInLeft delay-3s github",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 56
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fab fa-github",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 57
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "hide-on-small-only",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 58
     },
     __self: this
   }, "Github"))));
@@ -718,7 +732,7 @@ function Project(props) {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
+    href: props.git,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
@@ -732,7 +746,7 @@ function Project(props) {
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
+    href: props.link,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22

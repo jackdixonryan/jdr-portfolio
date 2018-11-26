@@ -19,53 +19,54 @@ var _jsxFileName = "/Users/johnryan/Dropbox/code/Interrim/portfolio/components/F
 var Foot = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Footer__Foot",
   componentId: "ejyy1q-0"
-})(["height:50px;display:grid;grid-template-rows:1fr;grid-template-columns:repeat(12,1fr);grid-template-areas:\"links links links links . . . . credits credits credits credits\";.credits{grid-area:credits;}.links{grid-area:links;}.init{grid-area:init;}justify-items:center;align-items:center;"]);
+})(["height:50px;display:grid;grid-template-rows:1fr;grid-template-columns:repeat(12,1fr);grid-template-areas:\"links links links links . . . . credits credits credits credits\";.credits{grid-area:credits;}.links{grid-area:links;.right{margin-left:20px;}}.init{grid-area:init;}justify-items:center;align-items:center;"]);
 function Footer() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Foot, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 28
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "links",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 29
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }, "LinkedIn!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }, "Github!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "credits",
+    href: "https://www.linkedin.com/in/john-dixon-ryan/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
+    },
+    __self: this
+  }, "LinkedIn"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "right",
+    href: "https://github.com/jackdixonryan",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }, "Github")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "credits",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fab fa-react",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 34
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 35
     },
     __self: this
   }, "Powered By ReactJS & Next")));

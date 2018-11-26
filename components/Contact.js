@@ -43,23 +43,21 @@ const Main = styled.div`
 `;
 
 export default function Contact() {
-  return (
-    <Main className="animated flipInX">
+  return <Main className="animated flipInX">
       <h3>Get in Touch!</h3>
       <div id="grid">
-        <a className="contact animated fadeInLeft delay-1s linkedin" href="#">
-          <i className="fab fa-linkedin"></i>
+        <a className="contact animated fadeInLeft delay-1s linkedin" href="https://www.linkedin.com/in/john-dixon-ryan/">
+          <i className="fab fa-linkedin" />
           <span className="hide-on-small-only">LinkedIn</span>
         </a>
-        <a href="#" className="contact animated fadeInLeft delay-2s email">
+        <p className="contact animated fadeInLeft delay-2s email">
           <span>jack.dixon.ryan@gmail.com</span>
-        </a>
-        <a href="#" className="contact animated fadeInLeft delay-3s github">
-          <i className="fab fa-github"></i>
+        </p>
+        <a href="https://github.com/jackdixonryan" className="contact animated fadeInLeft delay-3s github">
+          <i className="fab fa-github" />
           <span className="hide-on-small-only">Github</span>
         </a>
       </div>
-    </Main>
-  );
+    </Main>;
 }
 

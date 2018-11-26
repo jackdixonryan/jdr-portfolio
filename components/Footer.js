@@ -13,6 +13,9 @@ const Foot = styled.div`
   }
   .links {
     grid-area: links;
+    .right {
+      margin-left: 20px;
+    }
   }
   .init {
     grid-area: init;
@@ -24,8 +27,8 @@ const Foot = styled.div`
 export default function Footer() {
   return <Foot>
       <div className="links">
-        <a href="#">LinkedIn!</a>
-        <a href="#">Github!</a>
+        <a href="https://www.linkedin.com/in/john-dixon-ryan/">LinkedIn</a>
+        <a className="right" href="https://github.com/jackdixonryan">Github</a>
       </div>
       <div className="credits">
         <i className="fab fa-react" />

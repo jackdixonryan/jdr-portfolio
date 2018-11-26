@@ -16,10 +16,10 @@ export default function Project(props) {
         <p>{props.content}</p>
       </div>
       <div className="card-action">
-        <a href="#">
+        <a href={props.git}>
           <i className="fab fa-github" />
         </a>
-        <a href="#">
+        <a href={props.link}>
           <i className="fas fa-link" />
         </a>
       </div>
